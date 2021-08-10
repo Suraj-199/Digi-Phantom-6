@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Design 8</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage demo easing effect." />
+	<meta name="keywords"  content="fullpage,jquery,demo,easing,effect,jqueui" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="fullpage.css">
+	<link rel="stylesheet" type="text/css" href="examples.css">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+
+</style>
+
+
+<body>
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<img src="img/1.png" alt="fullPage" />
+		
+		
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<img src="img/2.png" alt="Cool" />
+			
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<img src="img/3.png" alt="Cool" />
+			
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<img src="img/4.png" alt="Cool" />
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        
+        //equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+        easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+    });
+</script>
+
+</body>
+</html>
